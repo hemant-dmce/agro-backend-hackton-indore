@@ -15,12 +15,14 @@ from satellite.views import SatelliteCropHealthView
 
 
 urlpatterns = [
-    # Root health check
+
+    # Root health endpoint
     path('', home),
 
+    # Admin
     path('admin/', admin.site.urls),
 
-    # Authentication APIs
+    # Authentication
     path('api/register', RegisterView.as_view(), name='register'),
     path('api/login', CustomTokenObtainPairView.as_view(), name='login'),
     path('api/profile', ProfileView.as_view(), name='profile'),
@@ -39,7 +41,7 @@ urlpatterns = [
     # Risk
     path('api/risk/analysis', RiskAnalysisView.as_view(), name='risk_analysis'),
 
-    # Other modules
+    # Modules
     path('api/irrigation/', include('irrigation.urls')),
     path('api/disease/', include('disease.urls')),
     path('api/labor/', include('labor.urls')),
