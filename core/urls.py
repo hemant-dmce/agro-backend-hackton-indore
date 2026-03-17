@@ -1,6 +1,6 @@
 from django.contrib import admin
 from django.urls import path, include
-from .views import home
+from .views import home, chatbot_view
 
 from authentication.views import (
     RegisterView, ProfileView, CustomTokenObtainPairView,
@@ -18,6 +18,9 @@ urlpatterns = [
 
     # Root health endpoint
     path('', home),
+    
+    # Chatbot
+    path('api/chatbot', chatbot_view, name='chatbot'),
 
     # Admin
     path('admin/', admin.site.urls),
