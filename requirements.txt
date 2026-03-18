@@ -1,8 +1,8 @@
 Django==4.2.7
 gunicorn==21.2.0
-pydantic==1.10.13
 djangorestframework==3.14.0
 djangorestframework-simplejwt==5.3.1
 django-cors-headers==4.3.1
-setuptools>=68
-wheel
+fpdf==1.7.2
+whitenoise==6.6.0
+python-dotenv==1.0.1
