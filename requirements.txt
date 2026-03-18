@@ -3,3 +3,4 @@ gunicorn==21.2.0
 pydantic==1.10.13
 setuptools>=68
 wheel 	
+djangorestframework==3.14.0
