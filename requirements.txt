@@ -3,5 +3,6 @@ gunicorn==21.2.0
 pydantic==1.10.13
 djangorestframework==3.14.0
 djangorestframework-simplejwt==5.3.1
+django-cors-headers==4.3.1
 setuptools>=68
 wheel
